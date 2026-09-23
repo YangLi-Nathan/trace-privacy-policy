@@ -105,7 +105,7 @@
 
     <p class="eyebrow">Trace</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: July 5, 2026</p>
+    <p class="updated">Effective date: July 5, 2026 · Last updated: September 20, 2026</p>
 
     <div class="lead">
       <p>Your memories never leave your device. This is not a marketing phrase — it is the technical reality of how Trace works.</p>
@@ -133,10 +133,11 @@
     <h2 style="font-size:17px; margin-top:24px;">Mapbox (Maps &amp; Location Search)</h2>
     <p>The app uses Mapbox for the 2D map view and place search. Mapbox's privacy policy is available at <a href="https://www.mapbox.com/legal/privacy" target="_blank">mapbox.com/legal/privacy</a>.</p>
     <ul>
-      <li>When you search for a place by name, only the text you type in the search field is sent to Mapbox's Geocoding API — not your GPS location.</li>
+      <li>When you search for a place by name, the text you type in the search field is sent to Mapbox's Geocoding API.</li>
+      <li>To turn a coordinate into a place name, the app sends that single coordinate to Mapbox's Geocoding API and receives a city and country name back. This happens when you use "Current Location" while adding a memory, and when "Import from Gallery" names a group of photos (one coordinate per group). Your photos and their other metadata are never sent.</li>
       <li>When you view the 2D map, map tiles are loaded from Mapbox's servers. Like any web request, this involves your IP address and the map area being viewed. Previously viewed areas are cached on your device for offline use.</li>
       <li>We have disabled Mapbox's optional usage telemetry in the app.</li>
-      <li>If you use "Current Location" instead of searching, your GPS coordinates are determined by your device's on-board GPS and are never transmitted to any server.</li>
+      <li>If you use "Current Location", your position is determined by your device's on-board GPS. We do not store it or send it to any server of ours; it is sent to Mapbox only as the single coordinate described above, to look up the place name.</li>
     </ul>
 
     <h2 style="font-size:17px; margin-top:24px;">Anthropic Claude (AI Title Suggestions — Optional)</h2>
@@ -153,7 +154,7 @@
     <h2>4. Device permissions</h2>
     <p>The app requests the following iOS permissions only when needed for specific features:</p>
     <ul>
-      <li><strong>Photos:</strong> To let you add photos to your memories. Photos are copied into the app's private storage — your original Photos library is not modified. If you use the optional "Import from Gallery" feature, the app scans your photo library's location and date metadata <em>on your device</em> to suggest memories from past trips. This scan happens entirely on-device — no photos or metadata are uploaded anywhere.</li>
+      <li><strong>Photos:</strong> To let you add photos to your memories. Photos are copied into the app's private storage — your original Photos library is not modified. If you use the optional "Import from Gallery" feature, the app scans your photo library's location and date metadata <em>on your device</em> to suggest memories from past trips. The scan itself happens entirely on-device and your photos are never uploaded. To name each group of photos, one coordinate per group is sent to Mapbox (see "Mapbox" above).</li>
       <li><strong>Location (When In Use):</strong> To automatically detect your current location when adding a memory. Used only on request — the app does not track your location in the background.</li>
       <li><strong>Notifications:</strong> To deliver "On This Day" reminders about memories from past years. These notifications are scheduled locally on your device and do not require a server.</li>
     </ul>
