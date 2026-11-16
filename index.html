@@ -105,17 +105,17 @@
 
     <p class="eyebrow">Trace</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Effective date: July 5, 2026 · Last updated: October 12, 2026</p>
+    <p class="updated">Effective date: July 5, 2026 · Last updated: November 5, 2026</p>
 
     <div class="lead">
-      <p>Your memories never leave your device. This is not a marketing phrase — it is the technical reality of how Trace works.</p>
+      <p>Trace works without an account. Your memories and photos are kept on your iPhone, and nothing is uploaded unless you choose to — by turning on the optional cloud backup or by sharing something yourself.</p>
     </div>
 
     <h2>1. Overview</h2>
-    <p>Trace ("we", "the app") is a personal memory and life-milestone app for iOS. We are committed to your privacy. This policy explains what data the app handles, how it is used, and what never leaves your device.</p>
+    <p>Trace ("we", "the app") is a personal memory and life-milestone app for iOS. We are committed to your privacy. This policy explains what data the app handles, how it is used, and when any of it leaves your device.</p>
 
     <h2>2. Data stored on your device</h2>
-    <p>All of the following is stored exclusively on your iPhone and is never transmitted to our servers:</p>
+    <p>All of the following is stored on your iPhone. None of it is sent to our servers unless you turn on the optional cloud backup (which copies your memories and photos, but never your home area — see "Cloud backup (Premium)" below):</p>
     <ul>
       <li>Memory records (title, date, notes, location coordinates, place name, country)</li>
       <li>Photos you add to memories (stored in the app's private sandbox)</li>
@@ -125,7 +125,7 @@
     </ul>
 
     <div class="highlight">
-      <p>We do not operate servers that store your personal data. We have no user accounts, no cloud sync, and no ability to access your memories.</p>
+      <p>An account is optional: the app works completely without one, and signing in does not upload any of the items listed above. We do not have the ability to access your memories unless you choose to turn on a cloud feature that stores them (see "Optional account" below).</p>
     </div>
 
     <h2>3. Third-party services</h2>
@@ -159,6 +159,39 @@
 
     <h2 style="font-size:17px; margin-top:24px;">Apple (StoreKit / In-App Purchases)</h2>
     <p>If you purchase optional themes (Globe Explorer Pack, Tech Pack, or Special Editions), the transaction is processed by Apple through the App Store. We receive confirmation that a purchase was completed but do not receive any payment or personal information. Apple's privacy policy applies: <a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a>.</p>
+    <p><strong>Trace Premium (subscription).</strong> If you subscribe to Trace Premium, Apple processes the payment and we never receive your payment details. To switch Premium on for your account, the app sends the signed subscription transaction that Apple issues to our service, and Apple also sends us notifications when your subscription renews, lapses or is refunded.</p>
+    <ul>
+      <li><strong>What we receive and keep:</strong> the transaction identifiers Apple assigns to your subscription, its current status (active, lapsed or refunded) and whether it will renew, the product, the time of the latest status change, and an opaque account token that links the subscription to your Trace account. This is linked to your account.</li>
+      <li><strong>Why:</strong> only to know whether your account has Premium, so the features it covers (currently cloud backup) turn on and off correctly. We do not use it for advertising, analytics or tracking.</li>
+      <li><strong>Who processes it:</strong> Apple, and our account service on Cloudflare, which stores the data above on our behalf.</li>
+      <li><strong>How long:</strong> for as long as your account exists; deleting your account deletes it. Deleting your account does not cancel an App Store subscription &mdash; manage that in your Apple Account settings.</li>
+    </ul>
+
+    <h2 style="font-size:17px; margin-top:24px;">Optional account (Sign in with Apple / Sign in with Google)</h2>
+    <p>You can optionally sign in with Apple or Google so that you can protect your memories with features that need an account. You never need an account to create, view, edit, export or delete memories on your device.</p>
+    <ul>
+      <li><strong>What we collect when you sign in:</strong> your Apple or Google account identifier (an opaque ID issued by Apple or Google), the email address on that account (if you choose "Hide My Email" with Apple, this is Apple's private relay address), your name (only if Apple or Google provides it, and Apple provides it only the first time), and a session token that keeps you signed in. The session token is stored in your iPhone's Keychain, on that device only.</li>
+      <li><strong>What signing in does not send:</strong> signing in shares only your Apple or Google identity. No memories, photos, places, or other content from the app are uploaded as part of signing in.</li>
+      <li><strong>Why we use it:</strong> only to recognise your account and to provide the account-based features you turn on. We do not use it for advertising, analytics or tracking.</li>
+      <li><strong>Who processes it:</strong> our account service runs on Cloudflare, which stores the data above on our behalf. Apple and Google process the sign-in itself under their own privacy policies (<a href="https://www.apple.com/legal/privacy" target="_blank">apple.com/legal/privacy</a>, <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a>).</li>
+      <li><strong>How long we keep it:</strong> for as long as your account exists. Signing out removes the session from your device and ends it on our service. Deleting your account removes it entirely (see below).</li>
+      <li><strong>Deleting your account:</strong> you can delete your account at any time in the app (Settings, then your account). This permanently deletes your account record, the sign-in identities linked to it, and any cloud data stored under it, and revokes the app's access to your Apple or Google account (for Apple, the sign-in token we hold is revoked with Apple). Deleting your account does not delete anything stored on your device, and does not cancel an App Store subscription, which you manage in your Apple Account settings.</li>
+      <li>Memories and photos stay on your device unless you yourself turn on the optional cloud backup, which is described in the next section.</li>
+    </ul>
+
+    <h2 style="font-size:17px; margin-top:24px;">Cloud backup (Premium)</h2>
+    <p>Cloud backup is optional and is part of Trace Premium. It is off until you turn it on, and turning it on is a deliberate step: the app shows you what is backed up before anything leaves your phone. You never need it to use Trace.</p>
+    <ul>
+      <li><strong>What is backed up:</strong> the memories on your device, including their photos, videos, Live Photo motion clips, voice notes, places (including precise coordinates), dates, notes and trips, and the thumbnails and preview images the app made from your photos. Your original photos in the iOS Photos library are not uploaded.</li>
+      <li><strong>What is never backed up:</strong> the estimate of your home area always stays on your device and is not uploaded.</li>
+      <li><strong>Encryption:</strong> the app encrypts your content on your iPhone before it is uploaded. The encryption keys are managed by our service, not held only by you, so this is not end-to-end encryption: we operate the service that can decrypt the copy in order to restore it to you, and we do not look at your content.</li>
+      <li><strong>Who processes it:</strong> the encrypted copy is stored with Cloudflare (Cloudflare R2), and the records that index it are kept in our Cloudflare account database. This content is linked to your account.</li>
+      <li><strong>Why:</strong> only to keep a copy for you and to restore it when you ask. We do not use it for advertising, analytics, tracking or to train models, and we do not share it with other people.</li>
+      <li><strong>Turning it off or deleting it:</strong> you can turn cloud backup off at any time in Settings. When you do, you choose whether to keep or to delete the copy in the cloud. Deleting the cloud copy removes the backed-up memories and files from our service and does not affect anything on your device. Deleting a memory on a phone that has backup turned on also removes it from the cloud copy.</li>
+      <li><strong>If your subscription ends:</strong> backing up stops, and your existing cloud copy is kept for 12 months so that you can still restore it; after that it may be deleted. You can delete it yourself at any time before then.</li>
+      <li><strong>If you delete your account:</strong> the cloud copy is deleted together with your account.</li>
+      <li><strong>Availability:</strong> cloud backup is not offered in mainland China. Anyone who already has a backup can still turn it off and delete it.</li>
+    </ul>
 
     <h2>4. Device permissions</h2>
     <p>The app requests the following iOS permissions only when needed for specific features:</p>
@@ -172,23 +205,23 @@
     <ul>
       <li>We do not collect analytics or crash reports.</li>
       <li>We do not display advertising.</li>
-      <li>We do not create or maintain user accounts.</li>
+      <li>We do not require an account. If you choose to sign in, we collect only the account data described under "Optional account" above.</li>
       <li>We do not share your data with third parties for marketing purposes.</li>
       <li>We do not use tracking technologies (cookies, device fingerprinting, etc.).</li>
     </ul>
 
     <h2>6. Backup, export, and sharing</h2>
-    <p>The app includes a local backup feature that lets you export all your memories and photos as a ZIP file. This file is created on your device and shared using iOS's standard share sheet (AirDrop, iCloud Drive, etc.). We do not have access to your backup files. The backup contains your memories and photos; it does not include the estimate of your home area, because that is the most sensitive location the app derives and backup files are often shared.</p>
+    <p>The app includes a local backup feature that lets you export all your memories and photos as a ZIP file. This file is created on your device and shared using iOS's standard share sheet (AirDrop, iCloud Drive, etc.). We do not have access to these ZIP backup files — this paragraph is about that local export; the optional cloud backup is described under "Cloud backup (Premium)" above. The ZIP backup contains your memories and photos; it does not include the estimate of your home area, because that is the most sensitive location the app derives and backup files are often shared.</p>
     <p>When you choose to share content from the app — such as a globe video — it is handed directly to the destination you select (the iOS share sheet, or an app like Instagram). What happens to shared content after that is governed by the destination service's own privacy policy.</p>
 
     <h2>7. Data retention and deletion</h2>
-    <p>Your data stays on your device for as long as you keep it. You can delete any individual memory at any time from within the app, or delete all of them at once from Settings — this removes every memory and trip, the photo and video copies the app made, time-message voice recordings, the widget's cached photo copies, and the app's estimate of your home area. Your original photos in the iOS photo library are never touched. Deleting the app removes all of its data from your device. Because we never receive your data, there is nothing for us to retain or delete on our side.</p>
+    <p>Your data stays on your device for as long as you keep it. You can delete any individual memory at any time from within the app, or delete all of them at once from Settings — this removes every memory and trip, the photo and video copies the app made, time-message voice recordings, the widget's cached photo copies, and the app's estimate of your home area. Your original photos in the iOS photo library are never touched. Deleting the app removes all of its data from your device. Unless you turn on the optional cloud backup, we never receive your memories or photos, so there is nothing for us to retain or delete on our side for those; if you do turn it on, the copy in the cloud is kept until you delete it, turn off backup and choose to delete it, or delete your account, and — after a subscription ends — for the period described under "Cloud backup (Premium)". If you created an optional account, the account data described above is kept until you delete your account in the app, which removes it from our service.</p>
 
     <h2>8. Your rights</h2>
-    <p>Privacy regulations such as the GDPR and CCPA give you rights to access, correct, export, and delete your personal data. Because all of your data lives on your own device, you can exercise every one of these rights directly in the app — viewing, editing, exporting (via backup), and deleting your data, one memory at a time or all at once from Settings — without needing to make a request to us.</p>
+    <p>Privacy regulations such as the GDPR and CCPA give you rights to access, correct, export, and delete your personal data. By default all of your data lives on your own device, so you can exercise every one of these rights directly in the app — viewing, editing, exporting (via backup), and deleting your data, one memory at a time or all at once from Settings — without needing to make a request to us. If you turn on the optional cloud backup, you can also delete the copy in the cloud yourself in the app (Settings, then Cloud Backup), or by deleting your account; if you need help with anything we hold, contact us.</p>
 
     <h2>9. Security</h2>
-    <p>Your data is protected by iOS's built-in security: the app's storage is sandboxed from other apps, and is encrypted by your device's hardware encryption whenever your iPhone is locked. We recommend using a device passcode to keep this protection effective.</p>
+    <p>Your data is protected by iOS's built-in security: the app's storage is sandboxed from other apps, and is encrypted by your device's hardware encryption whenever your iPhone is locked. We recommend using a device passcode to keep this protection effective. If you turn on cloud backup, your content is encrypted on your device before upload and stored encrypted with Cloudflare; the keys are managed by our service (see "Cloud backup (Premium)").</p>
 
     <h2>10. Children's privacy</h2>
     <p>Trace is not directed to children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe your child has provided us with personal information, please contact us.</p>
